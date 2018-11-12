@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.cloud.titlec.TitleBar
+            android:id="@+id/tb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:bar_style="night"
+            app:title="夜间样式标题"
+            app:title_left="返回"
+            app:title_right="设置"/>
+
+        <com.cloud.titlec.TitleBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:title="默认的标题"/>
+
+        <com.cloud.titlec.TitleBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:bar_style="transparent"
+            app:title="透明"
+            app:color_title="#000"/>
+
+
+        <com.cloud.titlec.TitleBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:line_visible="true"
+            app:title="带下划线的标题"/>
+
+
+        <com.cloud.titlec.TitleBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:icon_back="false"
+            app:title="不带箭头的标题"/>
+
+        <com.cloud.titlec.TitleBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:icon_left="@mipmap/ic_launcher"
+            app:icon_right="@mipmap/ic_launcher"
+            app:title="带图标"/>
+
+        <com.cloud.titlec.TitleBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:title_left="左边"
+            app:title_right="右边"
+            app:icon_back="false"
+            app:title="带文本的标题"/>
+
+        <com.cloud.titlec.TitleBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:title_left="左边"
+            app:color_left="#023215"
+            app:size_left="23sp"
+            app:title_right="右边"
+            app:color_right="#696969"
+            app:size_right="34sp"
+            app:icon_back="false"
+            app:title="文本大小和颜色"/>
+
+
+
+        <com.cloud.titlec.TitleBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_bar_bg"
+            app:bar_style="transparent"
+            app:title="自定义背景标题"
+            app:title_left="返回"
+            app:title_right="设置"/>
+
+        <com.cloud.titlec.TitleBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/title_bar_head"
+            app:bar_style="transparent"
+            app:title="可添加内容标题"
+            app:title_left="返回"
+            app:title_right="设置">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="TitleBar可以当做FrameLayout使用\n也可以在这里也可以添加自定义布局"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </com.cloud.titlec.TitleBar>
+    </LinearLayout>
+</ScrollView>
